@@ -1,8 +1,7 @@
 import './sass/main.scss';
 
-// import './js/get.js';
-// import './js/post.js';
-// import './js/patch.js';
+// import './js/try-catch.js';
+// import './js/json-parse.js';
+// import './js/async.js';
 // import './js/delete.js';
-
-console.log('hello');
+import './js/post.js';

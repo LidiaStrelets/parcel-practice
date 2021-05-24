@@ -6,21 +6,6 @@ const firstBook = {
   genres: ['фентези'],
   raiting: 7.1,
 };
-
-function addBook(newBook) {
-  const options = {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify(newBook),
-  };
-
-  return fetch(`${BASE_URL}/books`, options).then(r => r.json());
-}
-
-addBook(firstBook);
-
 const secondBook = {
   title: 'Гарри Поттер',
   author: 'Джоанн Роулинг',
@@ -28,4 +13,18 @@ const secondBook = {
   raiting: 10,
 };
 
-addBook(secondBook);
+async function addBook(bookToPost) {
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(bookToPost),
+  };
+
+  const responce = await fetch(`${BASE_URL}/books`, options);
+  const newBook = await responce.json();
+
+  return newBook;
+}
+addBook(firstBook);

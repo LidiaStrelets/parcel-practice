@@ -7,7 +7,3 @@ function fetchBooks() {
 function fetchBook(id) {
   return fetch(`${BASE_URL}/books/${id}`).catch(r => r.json());
 }
-
-fetchBooks();
-// fetchBook(1);
-// fetchBook(4);
