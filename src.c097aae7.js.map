@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":";;;AAOA,aAPA,QAAA,oBAOAA,QAAQC,IAAI","file":"src.c097aae7.js","sourceRoot":"../src","sourcesContent":["import './sass/main.scss';\n\n// import './js/get.js';\n// import './js/post.js';\n// import './js/patch.js';\n// import './js/delete.js';\n\nconsole.log('hello');\n"]}
